@@ -186,6 +186,16 @@ For whoever (or whatever) does the proposing:
   normalization (see "Anchor precisely" below) — pulling in a neighboring
   unchanged line, or the full enclosing declaration, if the wrapped fragment
   alone collapses to the same normalized form both ways.
+* **Inference-rule figures use `display +centered`, with rule labels and the
+  relation symbol vertically aligned.** A hand-drawn inference-rule block
+  (premises over a bar, over a conclusion, with a rule name) must be a
+  ```` ```display +centered ```` block, not a bare ```` ``` ```` block, sitting
+  at a minimal left margin — see "Inference-rule figures" in `STYLE-CODE.md`
+  for the full alignment algorithm (one premise per line; align the chapter's
+  step/eval symbol at one shared column; each rule's bar spans its own widest
+  line; rule labels share one column). Propose under `formatting/rule-figure`.
+  This applies to figures in chapters as they come up for proofreading, not as
+  a mandate to retrofit every existing figure in the book.
 * **Anchor precisely.** Each proposal is `{id, cat, old, new, why}`; `old` must
   occur exactly once in the file, and `old` and `new` must not contain one
   another. Both are enforced, and nothing is applied otherwise, because
